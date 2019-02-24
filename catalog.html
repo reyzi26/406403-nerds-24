@@ -1,206 +1,154 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML Academy: Нёрдс</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/nerds-logo.svg" width="160px" height="65px" alt="Логотип Nerds">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="studio.html">Студия</a></li>
+          <li><a href="clients.html">Клиенты</a></li>
+          <li class="navigation-catalog">Магазин</li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="basket-link">Корзина</li>
+        </ul>
+      </nav>
+      <h1>Магазин готовых шаблонов</h1>
+    </header>
+    <main class="container">
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр товара</h2>
+        <!-- Здесь будет форма-->
+        <h3>Сетка:</h3>
+        <ul class="filters-grid">
+          <li>Адаптивная</li>
+          <li>Фиксированная</li>
+          <li>Резиновая</li>
+        </ul>
+        <h3>Особенности:</h3>
+        <ul class="filters-features">
+          <li>Слайдер</li>
+          <li>Блок преимуществ</li>
+          <li>Новости</li>
+          <li>Галерея</li>
+          <li>Корзина</li>
+        </ul>
+        <button class="button button-view">Показать</button>
+      </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">Наши проекты</h2>
 
-  <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="img/nerds-logo.png" width = "160px"
-height="65px" alt="Логотип Nerds">
-      </a>
 
-      <ul class="site-navigation">
-        <li><a href="studio.html">Студия</a></li>
-        <li><a href="clients.html">Клиенты</a></li>
-        <li class="navigation-catalog">Магазин</li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-      <ul class="user-navigation">
-        <li class="basket-link">Корзина</li>
-      </ul>
-    </nav>
-    <h1>Магазин готовых шаблонов</h1>
-  </header>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <img src="img/sedona.jpg" class="catalog-item-image" width="360px" height="576px" alt="Седона">
+            <div class="catalog-item-info">
+              <h3 class="catalog-item-title">
+              <a href="catalog-item.html">
+                <span>Sedona</span>
+              </a>
+              </h3>
+              <p class="catalog-subtitle">Информационный сайт
+              для туристов</p>
+              <a class="button button-catalog-item-price" href="#">9 900 руб.</a>
+            </div>
+          </li>
 
-  <main class="container">
-    <section class="filters">
-      <h2 class="visually-hidden">Фильтр товара</h2>
-      <!-- Здесь будет форма-->
-      <h3>Сетка:</h3>
-      <ul type="circle" class="filters-grid">
-        <li>Адаптивная</li>
-        <li>Фиксированная</li>
-        <li>Резиновая</li>
-      </ul>
-      <h3>Особенности:</h3>
-      <ul type="square" class="filters-features">
-        <li>Слайдер</li>
-        <li>Блок преимуществ</li>
-        <li>Новости</li>
-        <li>Галерея</li>
-        <li>Корзина</li>
-      </ul>
-      <span class="button button-view">Показать</span>
+
+          <li class="catalog-item">
+            <img src="img/pink.jpg" class="catalog-item-image" width="360px" height="576px" alt="Pink App">
+            <div class="catalog-item-info">
+              <h3 class="catalog-item-title">
+              <a href="catalog-item.html">
+                <span>Pink App</span>
+              </a>
+              </h3>
+              <p class="catalog-subtitle">Информационный сайт
+              для туристов</p>
+              <a class="button button-catalog-item-price" href="#">9 900 руб.</a>
+            </div>
+          </li>
+
+
+          <li class="catalog-item">
+            <img src="img/barbershop.jpg" class="catalog-item-image" width="360px" height="576px" alt="Barbershop">
+            <div class="catalog-item-info">
+              <h3 class="catalog-item-title">
+              <a href="catalog-item.html">
+                <span>Barbershop</span>
+              </a>
+              </h3>
+              <p class="catalog-subtitle">Сайт салона красоты. Для мужчин, да.</p>
+              <a class="button button-catalog-item-price" href="#">9 900 руб.</a>
+            </div>
+          </li>
+
+
+          <li class="catalog-item">
+            <img src="img/mishka.jpg" class="catalog-item-image" width="360px" height="576px" alt=">MISHKA">
+            <div class="catalog-item-info">
+              <h3 class="catalog-item-title">
+              <a href="catalog-item.html">
+                <span>Mishka</span>
+              </a>
+              </h3>
+              <p class="catalog-subtitle">Интернет-магазин
+              вязаных игрушек</p>
+              <a class="button button-catalog-item-price" href="#">9 900 руб.</a>
+            </div>
+
+          </li>
+
+
+          <li class="catalog-item">
+            <img src="img/aplus.jpg" class="catalog-item-image" width="360px" height="576px" alt="A Plus">
+            <div class="catalog-item-info">
+              <h3 class="catalog-item-title">
+              <a href="catalog-item.html">
+                <span>A Plus</span>
+              </a>
+              </h3>
+              <p class="catalog-subtitle">Лендинг курсов повышения квалификации</p>
+              <a class="button button-catalog-item-price" href="#">9 900 руб.</a>
+            </div>
+          </li>
+
+
+          <li class="catalog-item">
+            <img src="img/kvast.jpg" class="catalog-item-image" width="360px" height="576px" alt="КВАСТ">
+            <div class="catalog-item-info">
+                <h3 class="catalog-item-title">
+                <a href="catalog-item.html">
+                  <span>Кваст</span>
+                </a>
+                </h3>
+                <p class="catalog-subtitle">Промо-сайт производителя
+                крафтового кваса</p>
+                <a class="button button-catalog-item-price" href="#">9 900 руб.</a>
+            </div>
+          </li>
+
+
+        </ul>
+      </section>
+    </main>
+    <section class="main-footer">
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграмм</a></li>
+        </ul>
+        <p class="social-text"><b>Давайте дружить, это выгодно!</b> Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </section>
-    <section class="catalog">
-      <h2 class="visually-hidden">Наши проекты</h2>
-      <ul catalog-list>
-        <p class="catalog-item-image">
-          <a href="catalog-item.html">
-            <img src="img/sedona.jpg" width="360px"
-height= "576px" alt="Седона">
-          </a>
-        </p>
-        <li class="catalog-item">
-          <h3>
-            <a href="catalog-item.html">
-              <span class="catalog-item-title">Sedona</span>
-            </a>
-          </h3>
-          <span class="catalog-subtitle">Информационный сайт
-для туристов</span>
-
-          <p class="catalog-item-price">
-            <a class="button" href="#">9 900 руб.</a>
-          </p>
-        </li>
-
-
-        <p class="catalog-item-image">
-          <a href="catalog-item.html">
-            <img src="img/pink.jpg" width="360px"
-height= "576px" alt="Pink App">
-          </a>
-        </p>
-        <li class="catalog-item">
-          <h3>
-            <a href="catalog-item.html">
-              <span class="catalog-item-title">Pink App</span>
-            </a>
-          </h3>
-          <span class="catalog-subtitle">Информационный сайт
-для туристов</span>
-
-          <p class="catalog-item-price">
-            <a class="button" href="#">9 900 руб.</a>
-          </p>
-        </li>
-
-
-        <p class="catalog-item-image">
-          <a href="catalog-item.html">
-            <img src="img/barbershop.jpg" width="360px"
-height= "576px" alt="Barbershop">
-          </a>
-        </p>
-        <li class="catalog-item">
-          <h3>
-            <a href="catalog-item.html">
-              <span class="catalog-item-title">Barbershop</span>
-            </a>
-          </h3>
-          <span class="catalog-subtitle">Сайт салона красоты. Для мужчин, да.</span>
-
-          <p class="catalog-item-price">
-            <a class="button" href="#">9 900 руб.</a>
-          </p>
-        </li>
-
-
-        <p class="catalog-item-image">
-          <a href="catalog-item.html">
-            <img src="img/mishka.jpg" width="360px"
-height= "576px" alt=">MISHKA">
-          </a>
-        </p>
-        <li class="catalog-item">
-          <h3>
-            <a href="catalog-item.html">
-              <span class="catalog-item-title">MISHKA</span>
-            </a>
-          </h3>
-          <span class="catalog-subtitle">Интернет-магазин
-вязаных игрушек</span>
-
-          <p class="catalog-item-price">
-            <a class="button" href="#">9 900 руб.</a>
-          </p>
-        </li>
-
-
-        <p class="catalog-item-image">
-          <a href="catalog-item.html">
-            <img src="img/aplus.jpg" width="360px"
-height= "576px" alt="A Plus">
-          </a>
-        </p>
-        <li class="catalog-item">
-          <h3>
-            <a href="catalog-item.html">
-              <span class="catalog-item-title">A Plus</span>
-            </a>
-          </h3>
-          <span class="catalog-subtitle">Лендинг курсов повышения квалификации</span>
-
-          <p class="catalog-item-price">
-            <a class="button" href="#">9 900 руб.</a>
-          </p>
-        </li>
-
-
-        <p class="catalog-item-image">
-          <a href="catalog-item.html">
-            <img src="img/kvast.jpg" width="360px"
-height= "576px" alt="КВАСТ">
-          </a>
-        </p>
-        <li class="catalog-item">
-          <h3>
-            <a href="catalog-item.html">
-              <span class="catalog-item-title">КВАСТ</span>
-            </a>
-          </h3>
-          <span class="catalog-subtitle">Промо-сайт производителя
-крафтового кваса</span>
-
-          <p class="catalog-item-price">
-            <a class="button" href="#">9 900 руб.</a>
-          </p>
-        </li>
-      </ul>
-
-    </section>
-  </main>
-
-
-  <footer class="main-footer">
-    <div class="footer-social">
-      <b>Давайте дружить, это выгодно!</b>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
-      <ul>
-        <li><a class="social-button" href="#">Вконтакте</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграмм</a></li>
-      </ul>
-    </div>
-  </footer>
-
-  <section class="modal modal-login">
-    <h2>Личный кабинет</h2>
-    <p>Введите свой логин и пароль</p>
-    <span class="modal-close">x</span>
-  </section>
-
-
-  <section class="modal modal-map">
-    <h2 class="visually-hidden">Как до нас добраться</h2>
-    <span class="modal-close">x</span>
-  </section>
-
-</body>
+  </body>
 </html>
